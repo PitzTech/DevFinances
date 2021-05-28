@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://github.com/PitzTech/JobsCalc"><img alt="dev.finances" title="dev.finances" src=".github/logo.svg" width="220px" /></a>
+  <a href="https://github.com/PitzTech/DevFinances"><img alt="dev.finances" title="dev.finances" src=".github/logo.svg" width="220px" /></a>
 </h1>
 
 <p align="center">
