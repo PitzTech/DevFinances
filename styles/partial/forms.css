@@ -1,0 +1,35 @@
+div#form {
+    max-width: 500px;
+}
+
+#form h2 {
+    margin-top: 0;
+}
+
+#form form input {
+    border: none;
+    border-radius: 0.2rem;
+
+    padding: 0.8rem;
+
+    width: 100%;
+}
+
+.input-group {
+    margin-top: 0.8rem;
+}
+
+.input-group small {
+    opacity: 0.4;
+}
+
+.input-group.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-group.actions .button, 
+.input-group.actions button{
+    width: 48%;
+}
