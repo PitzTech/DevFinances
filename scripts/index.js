@@ -36,6 +36,16 @@ const transactions = [
 
 const Transaction = {
     all: transactions,
+    add(transaction){
+        Transaction.all.push(transaction)
+        
+        App.reload()
+    },
+    remove(index) {
+        Transaction.all.splice(index, 1)
+        
+        App.reload()
+    },
     incomes() {
         let income = 0
         Transaction.all.forEach(transaction => {
@@ -92,6 +102,9 @@ const DOM = {
         expense.innerHTML = Format.currency(Transaction.expenses())
         total.innerHTML = Format.currency(Transaction.total())
     },
+    clearTransactions() {
+        DOM.transactionsContainer.innerHTML = ""
+    }
 }
 
 const App = {
@@ -101,6 +114,10 @@ const App = {
         })
         DOM.updateBalance()
     },
+    reload() {
+        DOM.clearTransactions()
+        App.init()
+    }
 }
 
 App.init()
