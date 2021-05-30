@@ -32,7 +32,7 @@
         <section id="balance">
             <h2 class="sr-only">Balanço</h2>
 
-            <div class="card animate-up">
+            <div id="incomeDisplay" class="card animate-up">
                 <h3>
                     <span>Entradas</span>
                     <img src="/images/income.svg" alt="Imagem de Entradas">
@@ -40,7 +40,7 @@
                 <p>R$ 5.000,00</p>
             </div>
             <!--   End Card  -->
-            <div class="card animate-up delay-1">
+            <div id="expenseDisplay" class="card animate-up delay-1">
                 <h3>
                     <span>Saídas</span>
                     <img src="/images/expense.svg" alt="Imagem de Saídas">
@@ -48,7 +48,7 @@
                 <p>R$ 2.000,00</p>
             </div>
             <!--   End Card  -->
-            <div class="card total animate-up delay-2">
+            <div id="totalDisplay" class="card total animate-up delay-2">
                 <h3>
                     <span>Total</span>
                     <img src="/images/total.svg" alt="Imagem de Total">
@@ -74,33 +74,7 @@
                     <!--   End Row   -->
                 </thead>
                 <tbody>
-                    <tr>
-                        <td class="description">Luz</td>
-                        <td class="expense">- R$ 500,00</td>
-                        <td class="date">23/01/2021</td>
-                        <td>
-                            <img src="/images/minus.svg" alt="Remover Transação">
-                        </td>
-                    </tr>
-                    <!--   End Row   -->
-                    <tr>
-                        <td class="description">Criação Website</td>
-                        <td class="income">- R$ 5.000,00</td>
-                        <td class="date">23/01/2021</td>
-                        <td>
-                            <img src="/images/minus.svg" alt="Remover Transação">
-                        </td>
-                    </tr>
-                    <!--   End Row   -->
-                    <tr>
-                        <td class="description">Internet</td>
-                        <td class="expense">- R$ 200,00</td>
-                        <td class="date">23/01/2021</td>
-                        <td>
-                            <img src="/images/minus.svg" alt="Remover Transação">
-                        </td>
-                    </tr>
-                    <!--   End Row   -->
+                    <!--   Transaction Rows   -->                    
                 </tbody>
             </table>
         </section>
