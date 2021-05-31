@@ -14,7 +14,7 @@ export default {
         return sign + value
     },
     amount(value) {
-        return Number(value) * 100
+        return Math.round(value * 100)
     },
     date(value) {
         const splittedDate = value.split("-") 
