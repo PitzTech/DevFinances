@@ -12,5 +12,13 @@ export default {
         })
 
         return sign + value
+    },
+    amount(value) {
+        return Number(value) * 100
+    },
+    date(value) {
+        const splittedDate = value.split("-") 
+        // 0 Year 1 Month 2 Day
+        return `${splittedDate[2]}/${splittedDate[1]}/${splittedDate[0]}`
     }
 }

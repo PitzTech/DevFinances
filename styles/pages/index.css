@@ -113,3 +113,7 @@ td.income {
 td.expense {
     color: #e92929;
 }
+
+table tbody td img.remove-btn {
+    cursor: pointer;
+}
